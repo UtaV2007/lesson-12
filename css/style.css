@@ -87,16 +87,21 @@ table {
 }
 
 #first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-image: url("/images/Rectangle 1.png");
   background-color: #cccccc;
   height: 64vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   width: 99vw;
 }
 #first h1 {
@@ -144,7 +149,7 @@ table {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    height: 2980px;
+    height: 460vw;
   }
 }
 #big #small1 {
@@ -166,9 +171,12 @@ table {
   #big #small1 {
     width: 64vw;
     height: 27vw;
+    display: -ms-flexbox;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 }
@@ -228,7 +236,7 @@ table {
 @media only screen and (max-width: 813px) {
   #big #small2 {
     width: 64vw;
-    height: 2709px;
+    height: 420vw;
   }
 }
 #big #small2 .div {
@@ -237,6 +245,11 @@ table {
 @media only screen and (max-width: 813px) {
   #big #small2 .div {
     width: 64vw;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
